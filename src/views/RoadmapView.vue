@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Header from '@/components/home/Header.vue'
-import Creators from '@/components/home/Creators.vue'
-import FAQ from '@/components/home/FAQ.vue'
+import Roadmap from '@/components/home/Roadmap.vue'
 import Footer from '@/components/home/Footer.vue'
 </script>
 
@@ -9,9 +8,7 @@ import Footer from '@/components/home/Footer.vue'
   <main>
     <Header />
 
-    <Creators />
-
-    <FAQ />
+    <Roadmap />
 
     <Footer />
   </main>
