@@ -90,4 +90,9 @@ hr {
   
   color: rgb(95, 95, 95);
 }
+@media (min-height: 1200px) {
+  .container {
+    padding-top: 25%;
+  }
+}
 </style>
