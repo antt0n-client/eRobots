@@ -1,6 +1,6 @@
 <template>
 
-<nav class="navbar navbar-expand-xl navbar-dark animate__animated animate__fadeInDown animate__faster">
+  <nav class="navbar navbar-expand-xl navbar-dark animate__animated animate__fadeInDown animate__faster">
 
     <div class="container">
 
@@ -10,18 +10,6 @@
         Elrond Robots
       </a>
       
-      <!-- Button for mobile 
-      <button class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarNav" 
-              aria-bs-controls="navbarNav" 
-              aria-bs-expanded="false" 
-              aria-bs-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-
-
       <button class="navbar-toggler navbar-toggler x collapsed" 
               type="button" 
               data-bs-toggle="collapse" 
@@ -43,20 +31,27 @@
         </ul>
 
         <div class="button-container">
-          <button type="button" class="btn btn-custom btn-mint"> 
-            <img src="@/assets/icons/shopbag.svg"> 
-            Mint
-          </button>
 
-          <button type="button" class="btn btn-custom"> 
-            <img src="@/assets/icons/profile.svg">  
-            Profile
-          </button>
+          <RouterLink to="/mint">
+            <button type="button" class="btn btn-custom btn-mint"> 
+              <img src="@/assets/icons/shopbag.svg"> 
+              Mint
+            </button>
+          </RouterLink>
 
-          <button type="button" class="btn btn-custom"> 
-            <img class="d-inline-block" src="@/assets/icons/thunder.svg"> 
-            Login
-          </button>
+          <RouterLink to="/profile">
+            <button type="button" class="btn btn-custom"> 
+              <img src="@/assets/icons/profile.svg">  
+              Profile
+            </button>
+          </RouterLink>
+
+          <RouterLink to="/login">
+            <button type="button" class="btn btn-custom"> 
+              <img class="d-inline-block" src="@/assets/icons/thunder.svg"> 
+              Login
+            </button>
+          </RouterLink>
         </div>
 
       </div>

@@ -1,60 +1,60 @@
 <template>
 
-<div class="container">
+  <div class="container">
 
-  <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center">
 
-      <div class="col-md-auto text-center animate__animated animate__slideInUp">
-          <h2>The</h2>
-          <h1>creators</h1>
-      </div>
+        <div class="col-md-auto text-center animate__animated animate__slideInUp">
+            <h2>The</h2>
+            <h1>creators</h1>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-md-center text-center">
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+
+          <div class="card" style="background-color: rgba(255, 166, 65, 0.2);">
+            <img class="card-img-top" src="@/assets/images/creators/overgames.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="overgames">@overgames</h5>
+              <hr/>
+              <p class="card-text">Passionate about programming and crypto. He takes care of the development of the discord bot as well as the communications parts.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+              
+          <div class="card" style="background-color: rgba(122, 25, 164, 0.2);">
+            <img class="card-img-top" src="@/assets/images/creators/timkyl.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="timkyl">@timkyl2203</h5>
+              <hr/>
+              <p class="card-text">Passionate about crypto. He takes care of the communications of the project.</p>
+            </div>
+          </div>
+              
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch">
+              
+          <div class="card" style="background-color: rgba(163, 24, 100, 0.2);">
+            <img class="card-img-top" src="@/assets/images/creators/torahime.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="torahime">@torahime</h5>
+              <hr/>
+              <p class="card-text">Passionate about graphic design for 7 years. He takes care of the design of the eRobots and the general graphic appearance of the project.</p>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
 
   </div>
-
-  <div class="row justify-content-md-center text-center">
-
-      <div class="col-lg-4 d-flex align-items-stretch">
-
-        <div class="card" style="background-color: rgba(255, 166, 65, 0.2);">
-          <img class="card-img-top" src="@/assets/images/creators/overgames.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" id="overgames">@overgames</h5>
-            <hr/>
-            <p class="card-text">Passionate about programming and crypto. He takes care of the development of the discord bot as well as the communications parts.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-lg-4 d-flex align-items-stretch">
-            
-        <div class="card" style="background-color: rgba(122, 25, 164, 0.2);">
-          <img class="card-img-top" src="@/assets/images/creators/timkyl.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" id="timkyl">@timkyl2203</h5>
-            <hr/>
-            <p class="card-text">Passionate about crypto. He takes care of the communications of the project.</p>
-          </div>
-        </div>
-            
-      </div>
-
-      <div class="col-lg-4 d-flex align-items-stretch">
-            
-        <div class="card" style="background-color: rgba(163, 24, 100, 0.2);">
-          <img class="card-img-top" src="@/assets/images/creators/torahime.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" id="torahime">@torahime</h5>
-            <hr/>
-            <p class="card-text">Passionate about graphic design for 7 years. He takes care of the design of the eRobots and the general graphic appearance of the project.</p>
-          </div>
-        </div>
-
-      </div>
-
-  </div>
-
-</div>
 
 </template>
 
