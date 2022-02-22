@@ -4,7 +4,7 @@
 
   <div class="row justify-content-md-center">
 
-      <div class="col-md-auto text-center">
+      <div class="col-md-auto text-center animate__animated animate__slideInUp">
           <h2>The</h2>
           <h1>creators</h1>
       </div>
