@@ -1,12 +1,12 @@
 <template>
 
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-xl navbar-dark animate__animated animate__fadeInDown animate__faster">
 
     <div class="container">
 
       <!-- Logo & Name -->
       <a class="navbar-brand" href="#">
-        <img src="@/assets/images/creators/torahime.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="@/assets/images/creators/torahime.png" width="60" height="60" class="d-inline-block align-top" alt="">
         Elrond Robots
       </a>
       
@@ -28,7 +28,7 @@
             <NavLink link="/roadmap" text="RoadMap" />
         </ul>
 
-        <div class="justify-content-end d-flex w-100">
+        <div class="button-container">
           <button type="button" class="btn btn-custom btn-mint"> 
             <img src="@/assets/icons/shopbag.svg"> 
             Mint
@@ -65,9 +65,35 @@ export default {
 
 <style scoped>
 nav {
-  color: white;
   font-family: "Roboto";
+  font-size: 20px;
 }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 22px;
+  color: #ffde03
+}
+.navbar-brand > img {
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+@media (max-width: 1199.98px) { 
+  .button-container {
+    justify-content: center;
+    padding-bottom: 25px;
+    border-bottom: solid 1px white;
+  }
+}
+
 .btn-custom {
   margin: 0 10px;
   border-radius: 10px;

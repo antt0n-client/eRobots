@@ -4,12 +4,12 @@
     
     <Navbar />
 
-    <div class="container" style=" display: flex; height: 80vh;">
+    <div class="container head-custom">
 
       <div class="row align-items-center align-self-center animate__animated animate__fadeInUp animate__faster">
 
         <div class="col-xl-6">
-          <img alt="eRobot Logo with baseline" src="@/assets/images/logo/logobaseline.png" width="100%"/>
+          <img class="img-fluid" alt="eRobot Logo with baseline" src="@/assets/images/logo/logobaseline.png" width="100%"/>
         </div>
 
         <div class="col-xl-6">
@@ -21,7 +21,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container numbers-custom">
 
       <div class="row justify-content-md-center align-items-center animate__animated animate__zoomIn animate__faster">
         
@@ -71,6 +71,33 @@ header {
   height: 110vh;
   color: white;
   font-size: 20px;
+  z-index: 0;
+}
+.head-custom {
+  display: flex; 
+  height: 80vh;
+}
+@media (max-height: 839.98px), (max-width: 900px) { 
+  header {
+    position: relative;
+    background: center top / 100% 100% url(@/assets/images/backgrounds/Header-Home.png) no-repeat;
+  }
+  .head-custom {
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .head-custom {
+    font-size: 18px;
+  }
+  .numbers-custom {
+    text-align: center;
+  }
+  .numbers-custom > div > div:not(.w-100) {
+    margin: 10px 0px;
+  }
 }
 p {
   top: 25px;
