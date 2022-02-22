@@ -6,7 +6,7 @@
 
       <!-- Logo & Name -->
       <a class="navbar-brand" href="#">
-        <img src="@/assets/images/creators/torahime.png" width="60" height="60" class="d-inline-block align-top" alt="">
+        <img src="@/assets/images/robot.png" width="60" height="60" class="d-inline-block align-top" alt="">
         Elrond Robots
       </a>
       
@@ -61,6 +61,7 @@ export default {
     NavLink
   }
 }
+
 </script>
 
 <style scoped>
@@ -124,4 +125,9 @@ nav {
   border-color: rgb(255, 255, 255, 0.5);
   box-shadow: 0px 0px 15px rgba(255, 222, 3, 0.5);
 }
+
+
+/* R&D */
+
+
 </style>

@@ -4,7 +4,7 @@ import router from './router'
 // Custom import
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
-import "jquery"
+import 'jquery'
 //import VueErdJsPlugin from 'vue-erdjs'
 
 const app = createApp(App)
