@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Header from '@/components/home/HeaderHome.vue'
 import RoadMap from '@/components/home/Roadmap.vue'
-import Footer from '@/components/home/footers/FooterRoadmap.vue'
+import Footer from '@/components/home/Footer.vue'
 </script>
 
 <template>

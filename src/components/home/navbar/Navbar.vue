@@ -77,15 +77,23 @@ export default {
       $('body', 'html').css("overflow", "auto");
     });
 
+    
+    const navbarCollapse = $('.navbar-collapse')
     $( window ).resize(function() {
       if ($( window ).width() > 1199.98) {
-        const navbarCollapse = $('.navbar-collapse')
         if (navbarCollapse.hasClass('show')) {
           $('body', 'html').css("overflow", "auto");
           navbarCollapse.collapse("hide");
         }
       }
     });
+
+    const navLinks = document.querySelectorAll('.nav-item')
+    navLinks.forEach((l) => {
+    l.addEventListener('click', () => { 
+      navbarCollapse.collapse("hide")
+     })
+})
   }
 }
 
