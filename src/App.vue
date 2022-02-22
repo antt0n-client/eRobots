@@ -19,7 +19,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background: center url(@/assets/images/backgrounds/background.png);
-  height: 100000px;
 
   margin: 0;
   padding: 0;
