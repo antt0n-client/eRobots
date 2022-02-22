@@ -23,4 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+  overflow: hidden;
+}
 </style>

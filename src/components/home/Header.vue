@@ -2,11 +2,11 @@
 
   <header>
     
-    <Navbar />
+    <Navbar class="animate__animated animate__fadeInDown animate__faster animate__delay-2s"/>
 
     <div class="container head-custom">
 
-      <div class="row align-items-center align-self-center animate__animated animate__fadeInUp animate__faster">
+      <div class="row align-items-center align-self-center animate__animated animate__zoomIn animate__faster">
 
         <div class="col-xl-6">
           <img class="img-fluid" alt="eRobot Logo with baseline" src="@/assets/images/logo/logobaseline.png" width="100%"/>
@@ -23,7 +23,7 @@
 
     <div class="container numbers-custom">
 
-      <div class="row justify-content-md-center align-items-center animate__animated animate__zoomIn animate__faster">
+      <div class="row justify-content-md-center align-items-center animate__animated animate__zoomIn animate__faster animate__delay-2s">
         
         <div class="col-md-8">
           <hr>

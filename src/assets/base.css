@@ -1,4 +1,9 @@
-/* Custom part */
+/* For animations */
+:root {
+  --animate-delay: 0.2s;
+}
+
+
 /* Robot Font */
 @font-face {
   font-family: "Robot";

@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="navbar navbar-expand-xl navbar-dark animate__animated animate__fadeInDown animate__faster">
+  <nav class="navbar navbar-expand-xl navbar-dark">
 
     <div class="container">
 
@@ -33,7 +33,7 @@
         <div class="button-container">
 
           <RouterLink to="/mint">
-            <button type="button" class="btn btn-custom btn-mint"> 
+            <button type="button" class="btn btn-custom btn-mint animate__animated animate__headShake animate__delay-5s"> 
               <img src="@/assets/icons/shopbag.svg"> 
               Mint
             </button>

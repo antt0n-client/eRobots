@@ -6,13 +6,13 @@
 
       <div class="row justify-content-md-center">
 
-        <div class="col-md-7">
+        <div class="col-md-7 animated animate__fadeInDown animate__faster">
           <hr>
         </div>
 
         <div class="w-100"></div>
 
-        <div class="col-md-7 icons">
+        <div class="col-md-7 icons animated animate__zoomInUp animate__faster">
 
           <a href="#" target="_blank" class="link-light">
             <i class="bi bi-discord"></i>
@@ -25,7 +25,7 @@
 
         <div class="w-100"></div>
 
-        <div class="col-md-7 footer-text">
+        <div class="col-md-7 footer-text animated animate__zoomInUp animate__faster">
 
           <a href="#" target="_blank" class="link-light">
             CGV

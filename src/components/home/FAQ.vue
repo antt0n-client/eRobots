@@ -4,7 +4,7 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-md-auto text-center animate__animated animate__slideInUp">
+            <div class="col-md-auto text-center animated animate__slideInUp animate__faster">
                 <h1>FAQ</h1>
             </div>
 
@@ -12,7 +12,7 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-md-10 faq-item animate__animated animate__fadeInLeft animate__fast">
+            <div class="col-md-10 faq-item animated animate__fadeInLeft animate__fast">
                 <h2>Q : What is ElrondRobots ?</h2>
                 <h3>R : ElrondRobots is an NFT project based on Robots in the theme of Futurama.<br>The NFT is on Elrond blockchain.</h3>
                 <hr>
@@ -20,7 +20,7 @@
 
             <div class="w-100"></div>
 
-            <div class="col-md-10 text-end faq-item animate__animated animate__fadeInRight animate__fast">
+            <div class="col-md-10 text-end faq-item animated animate__fadeInRight animate__fast">
                 <h2>Q : How many eRobots will ever exist ?</h2>
                 <h3>R : There will be only 666 eRobots ever minted.<br>The first 50 were sold at the presale. And the rest will be for the public sales.</h3>
                 <hr class="right">
@@ -28,7 +28,7 @@
 
             <div class="w-100"></div>
 
-            <div class="col-md-10 faq-item animate__animated animate__fadeInLeft animate__fast">
+            <div class="col-md-10 faq-item animated animate__fadeInLeft animate__fast">
                 <h2>Q : Can I chose my own eRobots during the mint ?</h2>
                 <h3>R : No, you'll get a random eRobots. But you can choose it with the marketplace !</h3>
                 <hr>
@@ -36,7 +36,7 @@
 
             <div class="w-100"></div>
 
-            <div class="col-md-10 text-end faq-item animate__animated animate__fadeInRight animate__fast">
+            <div class="col-md-10 text-end faq-item animated animate__fadeInRight animate__fast">
                 <h2>Q : What is the price of a eRobots ?</h2>
                 <h3>R : The price was at 0,3EGLD during the first presale.<br>The price is now at 0,3EGLD during the mint phase.</h3>
                 <hr class="right">
@@ -44,7 +44,7 @@
 
             <div class="w-100"></div>
 
-            <div class="col-md-10 faq-item animate__animated animate__fadeInLeft animate__fast">
+            <div class="col-md-10 faq-item animated animate__fadeInLeft animate__fast">
                 <h2>Q : When will I be able to buy my eRobots ?</h2>
                 <h3>R : You can mint your eRobots now at : <a href="https://trust.market/buy/eRobots" target="_blank">https://trust.market/buy/eRobot</a>.<br>Or you can trade it on emoon, trust, isengard and other elrond marketplace !</h3>
                 <hr>
@@ -52,7 +52,7 @@
 
             <div class="w-100"></div>
 
-            <div class="col-md-10 text-end faq-item animate__animated animate__fadeInRight animate__fast">
+            <div class="col-md-10 text-end faq-item animated animate__fadeInRight animate__fast">
                 <h2>Q : Where can I find my eRobots ?</h2>
                 <h3>R : You can view it by connecting your wallet to the website and go to your profile !</h3>
                 <hr class="right">
