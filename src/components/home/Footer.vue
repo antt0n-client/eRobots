@@ -45,9 +45,22 @@
 
 </template>
 
+<script lang="ts">
+export default {
+  props: ["background", "hrColor"],
+  name: "Footer",
+  data() { 
+    return { 
+      backgroundUrl: "url(/src/assets/images/backgrounds/Footer-" + this.background + ".png",
+      hrColor: this.hrColor
+    }
+  }
+}
+</script>
+
 <style scoped>
 footer {
-  background: center top / auto 100% url(@/assets/images/backgrounds/Footer-Home.png) no-repeat;
+  background: center top / auto 100% v-bind(backgroundUrl) no-repeat;
   filter: drop-shadow(0 0 0.80rem black);
   height: 30vh;
   color: white;
@@ -58,11 +71,11 @@ footer {
 @media (max-height: 839.98px), (max-width: 900px) { 
   footer {
     position: relative;
-    background: center top / 100% 100% url(@/assets/images/backgrounds/Footer-Home.png) no-repeat;
+    background: center top / 100% 100% v-bind(backgroundUrl) no-repeat;
   }
 }
 hr {
-  border-top: 3px solid #9138fd;
+  border-top: 3px solid v-bind(hrColor);
   border-radius: 500px;
   opacity: 0.8;
 }

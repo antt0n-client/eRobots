@@ -7,8 +7,13 @@
 </template>
 
 <script lang="ts">
-
 export default {
   props: ["link", "text"],
 }
 </script>
+
+<style scoped>
+.nav-link.active {
+  color: #f5de46!important;
+}
+</style>

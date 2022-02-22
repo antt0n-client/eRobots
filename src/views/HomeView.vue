@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Header from '@/components/home/Header.vue'
+import Header from '@/components/home/HeaderHome.vue'
 import Creators from '@/components/home/Creators.vue'
 import FAQ from '@/components/home/FAQ.vue'
 import Footer from '@/components/home/Footer.vue'
@@ -8,13 +8,13 @@ import Footer from '@/components/home/Footer.vue'
 <template>
   <main>
     
-    <Header />
+    <Header background="Home" hrColor="#9138fd"/>
 
     <Creators />
 
     <FAQ />
 
-    <Footer />
+    <Footer background="Home" hrColor="#9138fd"/>
   </main>
 </template>
 
