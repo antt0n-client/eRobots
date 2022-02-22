@@ -5,7 +5,7 @@
     <div class="container">
 
       <!-- Logo & Name -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="@/assets/images/robot.png" width="60" height="60" class="d-inline-block align-top" alt="">
         Elrond Robots
       </a>

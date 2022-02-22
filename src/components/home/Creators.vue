@@ -13,7 +13,7 @@
 
   <div class="row justify-content-md-center text-center">
 
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div class="col-lg-4 d-flex align-items-stretch">
 
         <div class="card" style="background-color: rgba(255, 166, 65, 0.2);">
           <img class="card-img-top" src="@/assets/images/creators/overgames.png" alt="Card image cap">
@@ -26,7 +26,7 @@
 
       </div>
 
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div class="col-lg-4 d-flex align-items-stretch">
             
         <div class="card" style="background-color: rgba(122, 25, 164, 0.2);">
           <img class="card-img-top" src="@/assets/images/creators/timkyl.png" alt="Card image cap">
@@ -39,7 +39,7 @@
             
       </div>
 
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div class="col-lg-4 d-flex align-items-stretch">
             
         <div class="card" style="background-color: rgba(163, 24, 100, 0.2);">
           <img class="card-img-top" src="@/assets/images/creators/torahime.png" alt="Card image cap">
@@ -72,6 +72,17 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: -20px;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 65px;
+  }
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 45px;
+    margin-top: -10px;
+  }
 }
 .card {
   margin: 25px;
@@ -118,4 +129,5 @@ hr {
   font-size: 19px;
   line-height: 1.1;
 }
+
 </style>
