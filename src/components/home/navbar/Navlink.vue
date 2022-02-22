@@ -1,6 +1,6 @@
 <template>
 
-  <li class="nav-item active">
+  <li class="nav-item active animated fadeInDown">
     <RouterLink class="nav-link" :to="link" active-class="active">{{ text }}</RouterLink>
   </li>
 

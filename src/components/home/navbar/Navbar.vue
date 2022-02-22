@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="navbar navbar-expand-xl navbar-dark animate__animated animate__fadeInDown animate__faster">
+<nav class="navbar navbar-expand-xl navbar-dark animate__animated animate__fadeInDown animate__faster">
 
     <div class="container">
 
@@ -10,7 +10,7 @@
         Elrond Robots
       </a>
       
-      <!-- Button for mobile -->
+      <!-- Button for mobile 
       <button class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse" 
@@ -19,7 +19,21 @@
               aria-bs-expanded="false" 
               aria-bs-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+
+      <button class="navbar-toggler navbar-toggler x collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav"
+              aria-bs-controls="navbarNav"
+              aria-bs-expanded="false" 
+              aria-bs-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
+      
       
       <!-- Items (with Navlink component) -->
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -59,6 +73,24 @@ export default {
   name: "Home",
   components: {
     NavLink
+  }, 
+  mounted() {
+    $('.navbar-collapse').on('shown.bs.collapse', function() {
+      $('body', 'html').css("overflow", "hidden");
+    });
+    $('.navbar-collapse').on('hide.bs.collapse', function() {
+      $('body', 'html').css("overflow", "auto");
+    });
+
+    $( window ).resize(function() {
+      if ($( window ).width() > 1199.98) {
+        const navbarCollapse = $('.navbar-collapse')
+        if (navbarCollapse.hasClass('show')) {
+          $('body', 'html').css("overflow", "auto");
+          navbarCollapse.collapse("hide");
+        }
+      }
+    });
   }
 }
 
@@ -127,7 +159,106 @@ nav {
 }
 
 
-/* R&D */
+/* FullScreen mobile navigation */
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .icon-bar {
+  height: 2px;
+  width: 22px;
+  border-radius: 1px;
+  display: block;
+  background-color: #B6B6B6;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+/*---Animation menu (create X)---*/
+.navbar-toggler.x .icon-bar:nth-of-type(1) {
+	-webkit-transform: translateX(3px) rotate(45deg); /* Safari 3-8 & Chrome 4-35 & Opera 15-22 */
+	-ms-transform: translateX(3px) rotate(45deg); /* IE 9 */
+  -moz-transform: translateX(3px) rotate(45deg); /* Firefox 3-15 */
+  -o-transform: translateX(3px) rotate(45deg); /* Opera 10-14 */
+	transform: translateX(3px) rotate(45deg);
+
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+  -moz-transform-origin: 10% 10%;
+  -o-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggler.x .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+  -moz-opacity:0; /* Older Firefox 1 */
+}
+.navbar-toggler.x .icon-bar:nth-of-type(3) {
+  -webkit-transform: translateX(3px) rotate(-45deg);
+	-ms-transform: translateX(3px) rotate(-45deg);
+  -moz-transform: translateX(3px)rotate(-45deg);
+  -o-transform: translateX(3px) rotate(-45deg);
+	transform: translateX(3px) rotate(-45deg);
+
+  -webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+  -moz-transform-origin: 10% 90%;
+  -o-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+.navbar-toggler.x.collapsed .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+	transform: rotate(0);
+}
+.navbar-toggler.x.collapsed .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+  -moz-opacity:1;
+}
+.navbar-toggler.x.collapsed .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+	transform: rotate(0);
+}
 
 
+@media only screen and (max-width : 1199.98px) {
+    #navbarNav{
+      height: 100vh !important;
+    }
+    .button-container {
+      margin-top: 25px;
+      padding: 0;
+
+      padding-top: 25px;
+      border: none;
+      border-top: solid 1px white;
+
+      justify-content: space-around;
+    }
+}
+
+@media only screen and (min-device-width : 1200px) {
+    #navbarNav{
+        height: auto;
+    }
+}
+</style>
+
+<style>
+@media only screen and (max-width : 1199.98px) {
+    a.nav-link {
+      font-size: 25px;
+      margin-top: 25px;
+    }
+}
 </style>
