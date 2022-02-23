@@ -13,11 +13,7 @@ import Footer from '@/components/home/Footer.vue'
     <Creators />
 
     <FAQ />
-
+    
     <Footer background="Home" hrColor="#9138fd"/>
   </main>
 </template>
-
-<style>
-
-</style>

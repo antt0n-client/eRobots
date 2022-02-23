@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'jquery'
 import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+
 //import VueErdJsPlugin from 'vue-erdjs'
 
 const app = createApp(App)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Header from '@/components/profile/Header.vue'
+import Header from '@/components/profile/Navbar.vue'
 import NFTViewer from '@/components/profile/NFTViewer.vue'
 
 </script>
@@ -11,7 +11,3 @@ import NFTViewer from '@/components/profile/NFTViewer.vue'
     <NFTViewer />
   </main>
 </template>
-
-<style>
-
-</style>

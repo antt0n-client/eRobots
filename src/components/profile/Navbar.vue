@@ -1,13 +1,12 @@
 <template>
 
-  <nav class="navbar navbar-expand-xl navbar-dark">
+<nav class="navbar navbar-expand-xl navbar-dark">
 
     <div class="container">
 
       <!-- Logo & Name -->
       <a class="navbar-brand" href="/">
-        <img src="@/assets/images/robot.png" width="60" height="60" class="d-inline-block align-top" alt="">
-        Elrond Robots
+        <img src="@/assets/images/logo/logo.png" class="d-inline-block align-top" alt="">
       </a>
       
       <button class="navbar-toggler navbar-toggler x collapsed" 
@@ -26,33 +25,21 @@
       <!-- Items (with Navlink component) -->
       <div class="collapse navbar-collapse" id="navbarNav">
         
-        <ul class="navbar-nav mr-auto">
-            <NavLink link="/" text="Home" />
-            <NavLink link="/roadmap" text="RoadMap" />
+        <ul class="navbar-nav">
+          <li class="nav-item active animated fadeInDown address-box">
+            <p>address: <span class="address-text">erd1nz42knvgmxpevepsyvq9dx3wzdgtd6lmu96y28tuupayazgx4fvs3w9d09</span></p>
+          </li>
         </ul>
 
         <div class="button-container">
 
-          <RouterLink to="/mint">
-            <button type="button" class="btn btn-custom btn-mint animate__animated animate__headShake animate__delay-5s"> 
-              <img src="@/assets/icons/shopbag.svg"> 
-              Mint
-            </button>
-          </RouterLink>
-
-          <RouterLink to="/profile">
-            <button type="button" class="btn btn-custom"> 
-              <img src="@/assets/icons/profile.svg">  
-              Profile
-            </button>
-          </RouterLink>
-
-          <RouterLink to="/login">
+          <RouterLink to="/logout">
             <button type="button" class="btn btn-custom"> 
               <img class="d-inline-block" src="@/assets/icons/thunder.svg"> 
-              Login
+              Logout
             </button>
           </RouterLink>
+
         </div>
 
       </div>
@@ -62,48 +49,17 @@
 
 </template>
 
-<script lang="ts">
-import NavLink from "./Navlink.vue";
-
-export default {
-  name: "Home",
-  components: {
-    NavLink
-  }, 
-  mounted() {
-    $('.navbar-collapse').on('shown.bs.collapse', function() {
-      $('body', 'html').css("overflow", "hidden");
-    });
-    $('.navbar-collapse').on('hide.bs.collapse', function() {
-      $('body', 'html').css("overflow", "overlay");
-    });
-
-    
-    const navbarCollapse = $('.navbar-collapse')
-    $( window ).resize(function() {
-      if ($( window ).width() > 1199.98) {
-        if (navbarCollapse.hasClass('show')) {
-          $('body', 'html').css("overflow", "overlay");
-          navbarCollapse.collapse("hide");
-        }
-      }
-    });
-
-    const navLinks = document.querySelectorAll('.nav-item')
-    navLinks.forEach((l) => {
-    l.addEventListener('click', () => { 
-      navbarCollapse.collapse("hide")
-     })
-    })
-  }
-}
-
-</script>
-
 <style scoped>
+.container {
+  background-color: rgba(201, 201, 201, 0.55);
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
 nav {
   font-family: "Roboto";
   font-size: 20px;
+  padding-top: 30px;
 }
 .navbar-brand {
   display: flex;
@@ -114,9 +70,25 @@ nav {
   font-size: 22px;
   color: #ffde03
 }
+.navbar-nav {
+  min-width: 80%;
+}
 .navbar-brand > img {
-  border-radius: 100%;
-  margin-right: 10px;
+  height: 40px;
+  border-right: 1px solid rgb(168, 168, 168);
+  padding-right: 20px;
+}
+.address-box {
+  font-size: 14px;
+}
+.address-box > p {
+  color: grey;
+  margin: 0;
+}
+span.address-text {
+  font-weight: 500;
+  color: rgb(211, 184, 7);
+  word-break: break-all;
 }
 .button-container {
   display: flex;
@@ -134,10 +106,10 @@ nav {
 .btn-custom {
   margin: 0 10px;
   border-radius: 10px;
-  border: 4px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(163, 163, 163, 0.2);
+  border: 4px solid rgb(236, 205, 1);
+  background-color: rgba(163, 163, 163, 0.3);
   font-size: 18px;
-  color: white;
+  color: rgb(177, 176, 176);
   font-weight: 500;
 }
 .btn-custom > img {
@@ -148,20 +120,10 @@ nav {
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active {
-  background-color: rgb(255, 255, 255, 0.3);
-  border-color: rgb(255, 255, 255, 0.3);
+  color: white;
+  background-color: rgba(163, 163, 163, 1);
+  border-color: #FFD700;
 }
-.btn-mint {
-  border-color: rgba(255, 222, 3, 0.5);
-}
-.btn-mint:hover,
-.btn-mint:focus,
-.btn-mint:active {
-  background-color: rgba(255, 222, 3, 0.6);
-  border-color: rgb(255, 255, 255, 0.5);
-  box-shadow: 0px 0px 15px rgba(255, 222, 3, 0.5);
-}
-
 
 /* FullScreen mobile navigation */
 
@@ -236,9 +198,6 @@ nav {
 
 
 @media only screen and (max-width : 1199.98px) {
-    #navbarNav{
-      height: 100vh !important;
-    }
     .button-container {
       margin-top: 25px;
       padding: 0;
@@ -247,22 +206,38 @@ nav {
       border: none;
       border-top: solid 1px white;
 
-      justify-content: space-around;
+      justify-content: center;
+    }
+    .address-box { 
+      margin-top: 15px;
+    }
+    .navbar-brand > img { 
+      border: none;
+      padding: none;
     }
 }
 
-@media only screen and (min-device-width : 1200px) {
-    #navbarNav{
-        height: auto;
-    }
-}
 </style>
 
-<style>
-@media only screen and (max-width : 1199.98px) {
-    a.nav-link {
-      font-size: 25px;
-      margin-top: 25px;
-    }
+<script lang="ts">
+export default {
+  mounted() {    
+    const navbarCollapse = $('.navbar-collapse')
+    $( window ).resize(function() {
+      if ($( window ).width() > 1199.98) {
+        if (navbarCollapse.hasClass('show')) {
+          navbarCollapse.collapse("hide");
+        }
+      }
+    });
+
+    const navLinks = document.querySelectorAll('.nav-item')
+    navLinks.forEach((l) => {
+    l.addEventListener('click', () => { 
+      navbarCollapse.collapse("hide")
+     })
+    })
+  }
 }
-</style>
+
+</script>

@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import 'animate.css';
+import 'animate.css'
 </script>
 
 <template>
+
   <RouterView />
+  
 </template>
 
 <style>
@@ -27,3 +29,4 @@ body {
   overflow: hidden;
 }
 </style>
+

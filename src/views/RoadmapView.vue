@@ -14,7 +14,3 @@ import Footer from '@/components/home/Footer.vue'
     <Footer background="Roadmap" hrColor="#386cfd"/>
   </main>
 </template>
-
-<style>
-
-</style>
