@@ -3,7 +3,7 @@
    <div class="container">
       <ul class="timeline">
 
-         <li class="timeline-inverted">
+         <li class="timeline-inverted animated animate__backInRight animate__fast">
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
                <div class="timeline-heading">
@@ -16,7 +16,7 @@
             </div>
          </li>  
          
-         <li>
+         <li class="animated animate__backInLeft animate__fast">
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
                <div class="timeline-heading">
@@ -29,7 +29,7 @@
             </div>
          </li>  
 
-         <li class="timeline-inverted">
+         <li class="timeline-inverted animated animate__backInRight animate__fast">
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
                <div class="timeline-heading">
@@ -42,7 +42,7 @@
             </div>
          </li>  
 
-         <li>
+         <li class="animated animate__backInLeft animate__fast">
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
                <div class="timeline-heading">
@@ -55,7 +55,7 @@
             </div>
          </li>  
 
-         <li class="timeline-inverted">
+         <li class="timeline-inverted animated animate__backInRight animate__fast">
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
                <div class="timeline-heading">
@@ -68,7 +68,7 @@
             </div>
          </li>  
 
-         <li>
+         <li class="animated animate__backInLeft animate__fast">
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
                <div class="timeline-heading">
