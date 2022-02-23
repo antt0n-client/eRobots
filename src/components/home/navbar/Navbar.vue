@@ -74,7 +74,7 @@ export default {
       $('body', 'html').css("overflow", "hidden");
     });
     $('.navbar-collapse').on('hide.bs.collapse', function() {
-      $('body', 'html').css("overflow", "auto");
+      $('body', 'html').css("overflow", "overlay");
     });
 
     
@@ -82,7 +82,7 @@ export default {
     $( window ).resize(function() {
       if ($( window ).width() > 1199.98) {
         if (navbarCollapse.hasClass('show')) {
-          $('body', 'html').css("overflow", "auto");
+          $('body', 'html').css("overflow", "overlay");
           navbarCollapse.collapse("hide");
         }
       }

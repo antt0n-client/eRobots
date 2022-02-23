@@ -2,7 +2,19 @@
 :root {
   --animate-delay: 0.2s;
 }
-
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(80, 80, 80, 0.39); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+body {
+  overflow: overlay;
+}
 
 /* Robot Font */
 @font-face {
