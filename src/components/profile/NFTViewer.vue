@@ -1,3 +1,13 @@
+<script lang="ts">
+import NTFItem from "./NFTItem.vue"
+
+export default {
+  components: {
+    NTFItem
+  }
+}
+</script>
+
 <template>
 
   <div class="container">
@@ -13,24 +23,20 @@
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-        <div class="row">
+        <div class="row tab-content-container">
 
-          <div class="col-md-3">
-
-            <div class="card " style="width: 18rem;">
-              <img src="@/assets/images/robot.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Elrond Robots #147</h5>
-                <p class="card-text">EROBOTS - #########</p>
-              </div>
-            </div>
-
-          </div>
+          <NTFItem v-for="_ in 8"/>
 
         </div>
 
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+        <div class="row tab-content-container">
+
+          <NTFItem v-for="_ in 8"/>
+          
+        </div>
 
       </div>
     </div>
@@ -74,22 +80,7 @@ nav > h1 > span {
   border-bottom-color: grey;
   border-radius: 0;
 }
-.card {
-  background-color: #C9C9C9;
-  border: 4px solid #C9C9C9;
-  border-radius: 10px;
-}
-.card > img {
-  border-radius: 10px;
-}
-.card-body .card-title {
-  color: black;
-  font-weight: 900;
-  margin: 0;
-  font-size: 18px;
-}
-.card-body .card-text {
-  color: black;
-  font-size: 14px;
+.tab-content-container {
+  padding-top: 20px;
 }
 </style>
