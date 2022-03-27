@@ -1,7 +1,7 @@
 <template>
     <div class="container head-custom justify-content-md-center">
 
-      <div class="row align-self-center text-center animate__animated animate__zoomIn animate__faster">
+      <div class="row align-self-center text-center">
 
         <div class="col-xl-12">
           <h1>Roadmap</h1>

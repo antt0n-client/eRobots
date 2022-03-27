@@ -1,18 +1,30 @@
+<script lang="ts" setup>
+import FooterHome from "@/assets/images/backgrounds/Footer-Home.png"
+import FooterRoadmap from "@/assets/images/backgrounds/Footer-Roadmap.png"
+
+const props = defineProps(['background'])
+const FooterImage = ((props["background"] == "Home") ? FooterHome : FooterRoadmap);
+</script>
 <template>
 
-  <footer>
+  <footer :style=" { backgroundImage: `url(${FooterImage})` }">
 
     <div class="container">
 
       <div class="row justify-content-md-center">
 
-        <div class="col-md-7 animated animate__fadeInDown animate__faster">
+        <aos-vue 
+          animation="zoom-in-down" duration="350" offset="-650"
+          class="col-md-7">
+
           <hr>
-        </div>
+        </aos-vue>
 
         <div class="w-100"></div>
 
-        <div class="col-md-7 icons animated animate__zoomInUp animate__faster">
+        <aos-vue 
+          animation="zoom-in-up" duration="350" offset="-700"
+          class="col-md-7 icons">
 
           <a href="#" target="_blank" class="link-light">
             <i class="bi bi-discord"></i>
@@ -21,11 +33,13 @@
             <i class="bi bi-twitter"></i>
           </a>
 
-        </div>
+        </aos-vue>
 
         <div class="w-100"></div>
 
-        <div class="col-md-7 footer-text animated animate__zoomInUp animate__faster">
+        <aos-vue
+          animation="zoom-in-up" duration="350" offset="-700"
+          class="col-md-7 footer-text">
 
           <a href="#" target="_blank" class="link-light">
             CGV
@@ -35,7 +49,7 @@
             CGU
           </a>
 
-        </div>
+        </aos-vue>
 
       </div>
 
@@ -47,11 +61,10 @@
 
 <script lang="ts">
 export default {
-  props: ["background", "hrColor"],
+  props: ["hrColor"],
   name: "Footer",
   data() { 
     return { 
-      backgroundUrl: "url(/src/assets/images/backgrounds/Footer-" + this.background + ".png",
       hrColor: this.hrColor
     }
   }
@@ -60,7 +73,9 @@ export default {
 
 <style scoped>
 footer {
-  background: center top / auto 100% v-bind(backgroundUrl) no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
   filter: drop-shadow(0 0 0.80rem black);
   height: 30vh;
   color: white;
@@ -71,7 +86,7 @@ footer {
 @media (max-height: 839.98px), (max-width: 900px) { 
   footer {
     position: relative;
-    background: center top / 100% 100% v-bind(backgroundUrl) no-repeat;
+    background-size: 100% 100%;
   }
 }
 hr {

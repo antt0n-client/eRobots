@@ -1,6 +1,5 @@
-/* For animations */
 :root {
-  --animate-delay: 0.2s;
+  --animate-delay: 0.2s!important;
 }
 body::-webkit-scrollbar {
   width: 10px; /* width of the entire scrollbar */

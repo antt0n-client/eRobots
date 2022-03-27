@@ -3,82 +3,113 @@
    <div class="container">
       <ul class="timeline">
 
-         <li class="timeline-inverted animated animate__backInRight animate__fast">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-               <div class="timeline-heading">
-                  <h4 class="timeline-date">30 November 2021</h4>
+         <li class="timeline-inverted">
+            <aos-vue 
+               animation="slide-left" duration="300" offset="-350"
+               class="animation-fix">
+
+               <div class="timeline-badge"></div>
+               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                     <h4 class="timeline-date">30 November 2021</h4>
+                  </div>
+                  <div class="timeline-body">
+                     <h5>Presales</h5>
+                     <p>of 50 eRobots for the price of 0.2 EGLD</p>
+                  </div>
                </div>
-               <div class="timeline-body">
-                  <h5>Presales</h5>
-                  <p>of 50 eRobots for the price of 0.2 EGLD</p>
-               </div>
-            </div>
+            </aos-vue>
          </li>  
          
-         <li class="animated animate__backInLeft animate__fast">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-               <div class="timeline-heading">
-                  <h4 class="timeline-date">09 December 2021</h4>
+         <li >
+            <aos-vue 
+               animation="slide-right" duration="300" offset="-350"
+               class="animation-fix">
+
+               <div class="timeline-badge"></div>
+               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                     <h4 class="timeline-date">09 December 2021</h4>
+                  </div>
+                  <div class="timeline-body">
+                     <h5>eRobots Drop</h5>
+                     <p>Elrond Robots was rewarded after the first presales</p>
+                  </div>
                </div>
-               <div class="timeline-body">
-                  <h5>eRobots Drop</h5>
-                  <p>Elrond Robots was rewarded after the first presales</p>
-               </div>
-            </div>
+
+            </aos-vue>
          </li>  
 
-         <li class="timeline-inverted animated animate__backInRight animate__fast">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-               <div class="timeline-heading">
-                  <h4 class="timeline-date">10 December 2021</h4>
+         <li class="timeline-inverted">
+            <aos-vue 
+               animation="slide-left" duration="300" offset="-350"
+               class="animation-fix">
+         
+               <div class="timeline-badge"></div>
+               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                     <h4 class="timeline-date">10 December 2021</h4>
+                  </div>
+                  <div class="timeline-body">
+                     <h5>Launching</h5>
+                     <p>Public mint available on <a href="https://trust.market/buy/eRobot" target="_blank">https://trust.market/buy/eRobot</a> for everyone</p>
+                  </div>
                </div>
-               <div class="timeline-body">
-                  <h5>Launching</h5>
-                  <p>Public mint available on <a href="https://trust.market/buy/eRobot" target="_blank">https://trust.market/buy/eRobot</a> for everyone</p>
-               </div>
-            </div>
+            </aos-vue>
          </li>  
 
-         <li class="animated animate__backInLeft animate__fast">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-               <div class="timeline-heading">
-                  <h4 class="timeline-date">01st Quarter 2022</h4>
+         <li >
+            <aos-vue 
+               animation="slide-right" duration="300" offset="-350"
+               class="animation-fix">
+
+               <div class="timeline-badge"></div>
+               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                     <h4 class="timeline-date">01st Quarter 2022</h4>
+                  </div>
+                  <div class="timeline-body">
+                     <h5>Website</h5>
+                     <p>Be able to connect your Maiar wallet directly on our website and mint/view your eRobots</p>
+                  </div>
                </div>
-               <div class="timeline-body">
-                  <h5>Website</h5>
-                  <p>Be able to connect your Maiar wallet directly on our website and mint/view your eRobots</p>
-               </div>
-            </div>
+            </aos-vue>
          </li>  
 
-         <li class="timeline-inverted animated animate__backInRight animate__fast">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-               <div class="timeline-heading">
-                  <h4 class="timeline-date">02nd Quarter 2022</h4>
+         <li class="timeline-inverted">
+            <aos-vue 
+               animation="slide-left" duration="300" offset="-350"
+               class="animation-fix">
+
+               <div class="timeline-badge"></div>
+               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                     <h4 class="timeline-date">02nd Quarter 2022</h4>
+                  </div>
+                  <div class="timeline-body">
+                     <h5>Giveaway</h5>
+                     <p>Every persons who hold a eRobot can participate to a giveaway to win 100 unique NFT</p>
+                  </div>
                </div>
-               <div class="timeline-body">
-                  <h5>Giveaway</h5>
-                  <p>Every persons who hold a eRobot can participate to a giveaway to win 100 unique NFT</p>
-               </div>
-            </div>
+            </aos-vue>
          </li>  
 
-         <li class="animated animate__backInLeft animate__fast">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-               <div class="timeline-heading">
-                  <h4 class="timeline-date">SOON</h4>
+         <li >
+            <aos-vue 
+               animation="slide-right" duration="300" offset="-350"
+               class="animation-fix">
+
+               <div class="timeline-badge"></div>
+               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                     <h4 class="timeline-date">SOON</h4>
+                  </div>
+                  <div class="timeline-body">
+                     <h5>Game</h5>
+                     <p>Every persons who hold a eRobot will have a pre-access to our future NFT Game</p>
+                  </div>
                </div>
-               <div class="timeline-body">
-                  <h5>Game</h5>
-                  <p>Every persons who hold a eRobot will have a pre-access to our future NFT Game</p>
-               </div>
-            </div>
+            </aos-vue>
          </li>  
 
       </ul>
@@ -103,33 +134,33 @@
   margin-left: -1.5px;
   border-radius: 30px;
 }
-.timeline > li {
+.timeline li {
   margin-bottom: 50px;
   position: relative;
 }
-.timeline > li:before,
-.timeline > li:after {
+.timeline li:before,
+.timeline li:after {
   content: "";
   display: table;
 }
-.timeline > li:after {
+.timeline li:after {
   clear: both;
 }
-.timeline > li:before,
-.timeline > li:after {
+.timeline li:before,
+.timeline li:after {
   content: "";
   display: table;
 }
-.timeline > li:after {
+.timeline li:after {
   clear: both;
 }
-.timeline > li:first-child {
+.timeline li:first-child {
   margin-top: 120px;
 }
-.timeline > li:last-child {
+.timeline li:last-child {
    margin-bottom: 120px;
 }
-.timeline > li > .timeline-panel {
+.timeline li .timeline-panel {
   width: 46%; /* 46 */
   float: left;
   border-radius: 2px;
@@ -143,7 +174,7 @@
 
   font-family: 'Roboto';
 }
-.timeline > li > .timeline-badge {
+.timeline-badge {
   color: #fff;
   width: 45px;
   height: 45px;
@@ -162,16 +193,17 @@
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
 }
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline .timeline-inverted .timeline-panel {
   float: right;
+  z-index: 99;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.timeline .timeline-inverted .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.timeline .timeline-inverted .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
@@ -184,17 +216,17 @@
   color: #F5C246;
   font-size: 33px;
 }
-.timeline-body > p,
-.timeline-body > ul,
-.timeline-body > h5 {
+.timeline-body p,
+.timeline-body ul,
+.timeline-body h5 {
   margin-bottom: 0;
 }
-.timeline-body > h5 {
+.timeline-body h5 {
    color: #F5C246;
    font-size: 25px;
    font-weight: 400;
 }
-.timeline-body > p {
+.timeline-body p {
    color: white;
    font-size: 23px;
    font-weight: 300;
@@ -206,29 +238,58 @@ a {
    text-decoration: none;
    color: #00C3FF;
 }
+
+/* ANIMATION FIX */
+.animation-fix {
+   display: flex;
+}
+.timeline-inverted .animation-fix {
+  justify-content: end;
+}
 @media (max-width: 1000px) {
-   .timeline > li.timeline-inverted > .timeline-panel {
-      float: left;
+   .timeline-inverted .animation-fix {
+      /* ANIMATION FIX */
+      justify-content: start;
+   }
+   .timeline .timeline-inverted .timeline-panel {
+      float: left!important;
    }
    .timeline:before {
       left: 90%;
    }
-   .timeline > li > .timeline-badge {
+   .timeline-badge {
       left: 90%;
    }
-   .timeline > li > .timeline-panel {
+   .timeline li .timeline-panel {
       width: 80%;
    }
 }
 @media (max-width: 600px) {
    .timeline-badge {
+      /* R&D */
+      /* 
       display: none;
+      */
+      height: 22.5px;
+      background-color: #0074FF;
+      border-radius: 110px 110px 0 0;
+      border: 5px solid white;
+      border-bottom: 0; 
+
+      top: -17.5px;
+      left: 50%;
    }
    .timeline:before {
-      content: none;
+      /* R&D */
+      /* 
+      display: none;
+      */
+      left: 50%;
+      opacity: .5;
    }
-   .timeline > li > .timeline-panel {
+   .timeline li .timeline-panel {
       width: 100%;
+      border: 5px solid white;
    }
 }
 </style>

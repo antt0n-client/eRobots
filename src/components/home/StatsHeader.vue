@@ -1,7 +1,7 @@
 <template>
     <div class="container numbers-custom">
 
-        <div class="row justify-content-md-center align-items-center animate__animated animate__zoomIn animate__faster animate__delay-2s">
+        <div class="row justify-content-md-center align-items-center">
         
             <div class="col-md-8">
                 <hr>
@@ -41,6 +41,17 @@ export default {
 </script>
 
 <style scoped>
+@media (max-height: 820px), (max-width: 767px) { 
+  h1 {
+    font-size: 19px!important;
+  }
+  h2 {
+    font-size: 17px!important;
+  }
+  hr {
+    margin: 0;
+  }
+}
 @media (max-width: 900px) {
   .numbers-custom {
     text-align: center;

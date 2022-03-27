@@ -1,10 +1,10 @@
 <template>
     <div class="container head-custom">
 
-      <div class="row align-items-center align-self-center animate__animated animate__zoomIn animate__faster">
+      <div class="row align-items-center align-self-center">
 
         <div class="col-xl-6">
-          <img class="img-fluid" alt="eRobot Logo with baseline" src="@/assets/images/logo/logobaseline.png" width="100%"/>
+          <img class="img-fluid mx-auto d-block" alt="eRobot Logo with baseline" src="@/assets/images/logo/logobaseline.png" width="100%"/>
         </div>
         
         <div class="col-xl-6">
@@ -21,7 +21,9 @@
 .head-custom {
   display: flex; 
   height: 80vh;
+  
 }
+
 @media (max-height: 839.98px), (max-width: 900px) { 
   .head-custom {
     height: auto;
@@ -34,9 +36,28 @@
     font-size: 18px;
   }
 }
+
+@media (max-height: 820px), (max-width: 767px) { 
+  .head-custom img {
+    max-height: 125px;
+    width: auto;
+  }
+  p {
+    font-size: 17px;
+    text-align: center;
+  }
+  p:last-of-type {
+    margin-bottom: 0px!important;
+  }
+}
+
+
 p {
   top: 25px;
   position:relative;
+}
+p:last-of-type {
+  margin-bottom: 20px;
 }
 span.text {
   color: #FFCB46;

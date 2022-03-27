@@ -4,53 +4,61 @@
 
     <div class="row justify-content-md-center">
 
-        <div class="col-md-auto text-center animated animate__slideInUp animate__faster">
-            <h2>The</h2>
-            <h1>creators</h1>
-        </div>
+      <aos-vue 
+        animation="fade-up" duration="500"
+        class="col-md-auto text-center">
+        
+        <h2>The</h2>
+        <h1>creators</h1>
+      </aos-vue>
 
     </div>
 
     <div class="row justify-content-md-center text-center">
 
-        <div class="col-lg-4 d-flex align-items-stretch animated animate__fadeInUp animate__fast">
+      <aos-vue 
+        animation="fade-up" delay="150" duration="350"
+        class="col-lg-4 d-flex align-items-stretch">
 
-          <div class="card" style="background-color: rgba(255, 166, 65, 0.2);">
-            <img class="card-img-top" src="@/assets/images/creators/overgames.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" id="overgames">@overgames</h5>
-              <hr/>
-              <p class="card-text">Passionate about programming and crypto. He takes care of the development of the discord bot as well as the communications parts.</p>
-            </div>
+        <div class="card" style="background-color: rgba(255, 166, 65, 0.2);">
+          <img class="card-img-top" src="@/assets/images/creators/overgames.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" id="overgames">@overgames</h5>
+            <hr/>
+            <p class="card-text">Passionate about programming and crypto. He takes care of the development of the discord bot as well as the communications parts.</p>
           </div>
-
         </div>
+      </aos-vue>
 
-        <div class="col-lg-4 d-flex align-items-stretch animated animate__fadeInUp animate__delay-2s animate__fast">
-              
-          <div class="card" style="background-color: rgba(122, 25, 164, 0.2);">
-            <img class="card-img-top" src="@/assets/images/creators/timkyl.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" id="timkyl">@timkyl2203</h5>
-              <hr/>
-              <p class="card-text">Passionate about crypto. He takes care of the communications of the project.</p>
-            </div>
+
+      <aos-vue 
+        animation="fade-up" delay="350" duration="350"
+        class="col-lg-4 d-flex align-items-stretch">
+            
+        <div class="card" style="background-color: rgba(122, 25, 164, 0.2);">
+          <img class="card-img-top" src="@/assets/images/creators/timkyl.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" id="timkyl">@timkyl2203</h5>
+            <hr/>
+            <p class="card-text">Passionate about crypto. He takes care of the communications of the project.</p>
           </div>
-              
         </div>
+      </aos-vue>
+      
 
-        <div class="col-lg-4 d-flex align-items-stretch animated animate__fadeInUp animate__delay-1s animate__fast">
-              
-          <div class="card" style="background-color: rgba(163, 24, 100, 0.2);">
-            <img class="card-img-top" src="@/assets/images/creators/torahime.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" id="torahime">@torahime</h5>
-              <hr/>
-              <p class="card-text">Passionate about graphic design for 7 years. He takes care of the design of the eRobots and the general graphic appearance of the project.</p>
-            </div>
+      <aos-vue  
+        animation="fade-up" delay="250" duration="350"
+        class="col-lg-4 d-flex align-items-stretch">
+        
+        <div class="card" style="background-color: rgba(163, 24, 100, 0.2);">
+          <img class="card-img-top" src="@/assets/images/creators/torahime.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" id="torahime">@torahime</h5>
+            <hr/>
+            <p class="card-text">Passionate about graphic design for 7 years. He takes care of the design of the eRobots and the general graphic appearance of the project.</p>
           </div>
-
         </div>
+      </aos-vue>
 
     </div>
 

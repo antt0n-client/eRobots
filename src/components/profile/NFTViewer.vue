@@ -55,6 +55,8 @@ export default {
   margin-top: 10px;
   font-family: 'Roboto';
   color: grey;
+
+  margin-bottom: 30px;
 }
 nav > h1 {
   margin: 0;

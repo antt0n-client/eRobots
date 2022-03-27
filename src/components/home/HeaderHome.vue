@@ -1,15 +1,24 @@
+<script lang="ts" setup>
+import HeaderHome from '@/assets/images/backgrounds/Header-home.png'
+import HeaderRoadmap from '@/assets/images/backgrounds/Header-Roadmap.png'
+
+const props = defineProps(['background'])
+const HeaderImage = ((props["background"] == "Home") ? HeaderHome : HeaderRoadmap);
+</script>
+
 <template>
 
-  <header>
+  <header :style=" { backgroundImage: `url(${HeaderImage})` }" >
     
     <!-- Navbar - same for all pages -->
     <Navbar class="animate__animated animate__fadeInDown animate__faster animate__delay-2s"/>
 
-    <HomeHeader v-if="background == 'Home'" />
+    <div class="animate__animated animate__zoomIn animate__faster">
+      <HomeHeader  v-if="background == 'Home'" />
+      <RoadmapHeader v-if="background == 'Roadmap'" />
+    </div>
 
-    <RoadmapHeader v-if="background == 'Roadmap'" />
-
-    <StatsHeader :color="hrColor"/>
+    <StatsHeader class="animate__animated animate__zoomIn animate__faster animate__delay-2s" :color="hrColor"/>
 
   </header>
 
@@ -22,23 +31,22 @@ import HomeHeader from "./header/Home.vue";
 import RoadmapHeader from "./header/Roadmap.vue";
 
 export default {
-  props: ["background", "hrColor"],
+  props: ["hrColor"],
   name: "Header",
   components: {
     Navbar,
     StatsHeader,
     HomeHeader,
     RoadmapHeader
-},
-  data() { 
-    return { backgroundUrl: "url(/src/assets/images/backgrounds/Header-" + this.background + ".png" }
   }
 }
 </script>
 
 <style scoped>
 header {
-  background: center top / auto 100% v-bind(backgroundUrl) no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
   filter: drop-shadow(0 0 0.80rem black);
   height: 110vh;
   color: white;
@@ -48,8 +56,12 @@ header {
 @media (max-height: 839.98px), (max-width: 900px) { 
   header {
     position: relative;
-    background: center top / 100% 100% v-bind(backgroundUrl) no-repeat;
+    background-size: 100% 100%;
   }
 }
-
+@media (max-height: 820px), (max-width: 767px) { 
+  header {
+    height: 150vh;
+  }
+}
 </style>
